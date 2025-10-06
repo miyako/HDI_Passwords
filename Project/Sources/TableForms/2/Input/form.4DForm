@@ -1,0 +1,308 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 600,
+	"height": 400,
+	"markerBody": 393,
+	"markerBreak": 393,
+	"markerFooter": 403,
+	"events": [
+		"onLoad",
+		"onDataChange",
+		"onCloseBox",
+		"onLoadRecord"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 30,
+					"width": 540,
+					"height": 295,
+					"fill": "automatic",
+					"stroke": "#888888",
+					"borderRadius": 5
+				}
+			}
+		},
+		{
+			"objects": {
+				"UserID": {
+					"type": "input",
+					"top": 51,
+					"left": 515,
+					"width": 49,
+					"height": 12,
+					"dataSource": "[UserInformation:2]UserID:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 90,
+					"left": 300,
+					"width": 250,
+					"height": 23,
+					"sizingX": "grow",
+					"dataSource": "<>UserName",
+					"fontFamily": "Helvetica",
+					"fontSize": 20,
+					"fill": "transparent",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 128,
+					"left": 300,
+					"width": 250,
+					"height": 23,
+					"sizingX": "grow",
+					"dataSource": "<>UserPassword",
+					"fontFamily": "Helvetica",
+					"fontSize": 20,
+					"fill": "transparent",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterKeystroke"
+					]
+				},
+				"UserID1_first": {
+					"type": "radio",
+					"top": 173,
+					"left": 300,
+					"width": 43,
+					"height": 31,
+					"dataSource": "[UserInformation:2]VisibleInDialog:3",
+					"text": ":xliff:lib_yes",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"radioGroup": "UserID1_group",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UserID1": {
+					"type": "radio",
+					"top": 173,
+					"left": 363,
+					"width": 187,
+					"height": 31,
+					"dataSource": "Not:C34([UserInformation:2]VisibleInDialog:3)",
+					"text": ":xliff:lib_no2",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"radioGroup": "UserID1_group",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UserIcon2": {
+					"type": "input",
+					"top": 221,
+					"left": 300,
+					"width": 64,
+					"height": 64,
+					"dataSource": "[UserInformation:2]UserIcon:2",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/UserIcon2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 265,
+					"left": 203,
+					"width": 77,
+					"height": 20,
+					"dataSource": "Button1",
+					"text": ":xliff:btn_browse",
+					"class": "Small_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 356,
+					"left": 350,
+					"width": 90,
+					"height": 24,
+					"dataSource": "<>bCancel",
+					"action": "cancel",
+					"text": ":xliff:btn_cancel",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 356,
+					"left": 460,
+					"width": 90,
+					"height": 24,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": ":xliff:btn_ok",
+					"focusable": false,
+					"method": "ObjectMethods/bOK.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 240,
+					"left": 55,
+					"width": 225,
+					"height": 12,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": ":xliff:lib_suggestedSize"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 51,
+					"left": 469,
+					"width": 36,
+					"height": 12,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "ID"
+				},
+				"S1_Text2": {
+					"type": "text",
+					"top": 89,
+					"left": 55,
+					"width": 225,
+					"height": 23,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 20,
+					"text": ":xliff:lib_name"
+				},
+				"S1_Text1": {
+					"type": "text",
+					"top": 179,
+					"left": 55,
+					"width": 225,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"text": ":xliff:lib_visible"
+				},
+				"S1_Text3": {
+					"type": "text",
+					"top": 220,
+					"left": 55,
+					"width": 225,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"text": ":xliff:lib_icon"
+				},
+				"S1_Text4": {
+					"type": "text",
+					"top": 127,
+					"left": 55,
+					"width": 225,
+					"height": 23,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 20,
+					"text": ":xliff:lib_password"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "Layer 1",
+		"defaultView": "Layer 1",
+		"views": {
+			"Layer 1": {},
+			"Layer 2": {},
+			"Layer 3": {},
+			"Layer 4": {},
+			"Layer 5": {},
+			"Layer 6": {},
+			"Layer 7": {},
+			"Layer 8": {},
+			"Layer 9": {}
+		}
+	},
+	"geometryStamp": 1,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

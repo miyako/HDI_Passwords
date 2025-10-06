@@ -1,0 +1,48 @@
+{
+	"Custom4DPWDialog": {
+		"methods": [
+			"CustomPWDlg_OM",
+			"mCustom4DPWDialog_Start"
+		]
+	},
+	"CustomizeUser": {
+		"forms": [
+			"[UserInformation]Input",
+			"[UserInformation]Output"
+		]
+	},
+	"débug": {
+		"methods": [
+			"zTest"
+		]
+	},
+	"Default Forms": {},
+	"Default Group": {
+		"groups": [
+			"Custom4DPWDialog",
+			"CustomizeUser",
+			"Default Forms",
+			"Default Project Methods",
+			"Default Tables",
+			"Own4DPWDialog"
+		],
+		"methods": [
+			"mCloseWindow"
+		]
+	},
+	"Default Project Methods": {},
+	"Default Tables": {
+		"tables": [
+			"PREFERENCES"
+		]
+	},
+	"Own4DPWDialog": {
+		"methods": [
+			"PS_Login"
+		],
+		"forms": [
+			"D_Login"
+		]
+	},
+	"trash": {}
+}

@@ -1,0 +1,90 @@
+{
+	"users": {
+		"designer": {
+			"password": "Kjg/94PRrUDafImXUuZYuw==",
+			"alias": "Designer"
+		},
+		"administrator": {
+			"password": "QMYs7LUyK2A3cl1J8R3VDw==",
+			"alias": "Administrator"
+		},
+		"Louis": {
+			"password": "X+eMKmznyqj9Q3bqmnWLtw=="
+		},
+		"Gérald": {
+			"password": "+gCXArOXvzG1oFPo5AcLHw=="
+		},
+		"Olivier": {
+			"password": "v2+KAIJn81Xkqi5K5v+M8g=="
+		},
+		"Marceline": {
+			"password": "SbnoOzQn57MQwHJ+aBKowg=="
+		},
+		"Noel": {
+			"password": "vP5yjUAogVyRO9V8Mn743Q=="
+		},
+		"Peter": {
+			"password": "w+WzUYONpnZcmxHDpPtdyA=="
+		},
+		"Tanguy": {
+			"password": "LoAzfF9BfIaVfzGAPU2brA=="
+		},
+		"Denise": {
+			"password": "h2iEn9nTLsJ+RxQek6cTCw=="
+		},
+		"Zoé": {
+			"password": "BzDTpGCpCjyf8RGMEOnOIA=="
+		},
+		"Yannick": {
+			"password": "enbEM/AA578cF4BZHtPYSA=="
+		},
+		"roland": {
+			"password": "nz5qC4sQoQ2+142dlou+xQ=="
+		}
+	},
+	"groups": {
+		"Engineers": {
+			"users": [
+				"Designer",
+				"Louis",
+				"Gérald",
+				"Marceline",
+				"Noel"
+			]
+		},
+		"Staff": {
+			"users": [
+				"Designer",
+				"Administrator"
+			]
+		},
+		"Secret": {
+			"users": [
+				"Olivier",
+				"Peter"
+			],
+			"groups": [
+				"Engineers"
+			]
+		}
+	},
+	"sqlSchemaGranters": {
+		"DEFAULT_SCHEMA": {
+			"readOnlyAccessGroup": "*",
+			"readWriteAccessGroup": "*",
+			"allAccessGroup": ""
+		}
+	},
+	"remoteGranters": {
+		"web": "*",
+		"soap": "*"
+	},
+	"settings": {
+		"localGenericWebUser": "Designer",
+		"designAccessGroup": "*",
+		"localMobileAccessGroupRW": "*",
+		"remoteMobileAccessGroupRW": "*",
+		"remoteGenericWebUser": "Designer",
+		"remoteDefaultUser": ""
+	}
+}

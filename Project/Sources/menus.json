@@ -1,0 +1,117 @@
+{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Menu Bar #1",
+			"items": [
+				{
+					"link": 14689
+				},
+				{
+					"link": 1552
+				},
+				{
+					"link": 29431
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 14689,
+			"title": ":xliff:menu_file",
+			"items": [
+				{
+					"title": ":xliff:MenuPref",
+					"method": "PS_Preferences",
+					"shortcutAccel": true,
+					"shortcutKey": "P"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:MenuWho",
+					"method": "M_WhoAmI",
+					"shortcutAccel": true,
+					"shortcutKey": "?"
+				},
+				{
+					"title": ":xliff:MenuId",
+					"method": "PS_Login",
+					"shortcutAccel": true,
+					"shortcutKey": "L"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:menu_quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 1552,
+			"title": ":xliff:menu_edit",
+			"items": [
+				{
+					"title": ":xliff:menu_undo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:menu_repeat",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:menu_copy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:menu_paste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:menu_clear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:menu_selectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				}
+			]
+		},
+		{
+			"link": 29431,
+			"title": ":xliff:menu_mode",
+			"items": [
+				{
+					"title": ":xliff:Menu_ReturnToDesignMode",
+					"shortcutAccel": true,
+					"shortcutKey": "Y",
+					"action": "design"
+				}
+			]
+		}
+	]
+}

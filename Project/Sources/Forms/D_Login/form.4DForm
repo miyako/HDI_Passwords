@@ -1,0 +1,299 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 400,
+	"width": 360,
+	"height": 400,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onActivate",
+		"onDeactivate",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Button2": {
+					"type": "button",
+					"top": 361,
+					"left": 240,
+					"width": 100,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>bOK",
+					"shortcutKey": "[Return]",
+					"text": ":xliff:btn_ok",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 361,
+					"left": 130,
+					"width": 100,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "<>bSwap",
+					"text": ":xliff:btn_other",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 314,
+					"left": 0,
+					"width": 140,
+					"height": 16,
+					"sizingY": "move",
+					"textAlign": "right",
+					"text": ":xliff:lib_password",
+					"fontTheme": "normal",
+					"fontSize": 18
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 314,
+					"left": 156,
+					"width": 180,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "<>UserPassword",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"fontTheme": "normal",
+					"fontSize": 18
+				}
+			}
+		},
+		{
+			"objects": {
+				"lbUserList": {
+					"type": "listbox",
+					"top": 20,
+					"left": 20,
+					"width": 316,
+					"height": 274,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "lbUserList",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "64px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/lbUserList.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "<>_UsersIcons",
+							"dataSourceTypeHint": "picture",
+							"width": -1,
+							"minWidth": -1,
+							"maxWidth": -1,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"enterable": false
+						},
+						{
+							"name": "Column2",
+							"dataSource": "<>_UsersNames",
+							"width": -1,
+							"minWidth": -1,
+							"maxWidth": -1,
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Arial",
+							"fontSize": 24,
+							"header": {
+								"name": "Header2",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"stroke": "automatic",
+							"enterable": false,
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column3",
+							"dataSource": "<>_UsersIDs",
+							"dataSourceTypeHint": "number",
+							"width": -1,
+							"minWidth": -1,
+							"maxWidth": -1,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"header": {
+								"name": "Header3",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "System Font Regular",
+								"fontSize": 12
+							},
+							"truncateMode": "none",
+							"enterable": false
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 26,
+					"left": 20,
+					"width": 120,
+					"height": 16,
+					"textAlign": "right",
+					"text": ":xliff:lib_name",
+					"fontTheme": "normal",
+					"fontSize": 18
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 26,
+					"left": 156,
+					"width": 180,
+					"height": 17,
+					"dataSource": "<>UserName",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"fontTheme": "normal",
+					"fontSize": 18
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"activeView": "Layer 4",
+		"defaultView": "Layer 1",
+		"views": {
+			"Layer 1": {},
+			"Layer 2": {},
+			"Layer 3": {},
+			"Layer 4": {},
+			"Layer 5": {},
+			"Layer 6": {},
+			"Layer 7": {},
+			"Layer 8": {},
+			"Layer 9": {}
+		}
+	},
+	"geometryStamp": 1,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

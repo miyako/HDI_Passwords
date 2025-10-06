@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="4D Passwords" uuid="CCF8432AD5A54A24A425188D7E4D1036" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="PREFERENCES" uuid="6BAA392ECF1D4C6FB28183433841E7E7" id="1" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="LoginDialogType" uuid="4D618F52A1E54C19928595D1F4ACA1FA" type="4" never_null="true" id="1"/>
+		<field name="UserInformation" uuid="EB7143FAA66949CA9E36BF5AE8FE22C4" type="18" never_null="true" id="2"/>
+		<table_extra input_form="Output" output_form="Output">
+			<editor_table_info displayable_fields_count="2">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="15" top="18" width="142" height="83.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="UserInformation" uuid="BEA932F5E0464C6A9CC7DA9B050CAF8E" id="2" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="UserID" uuid="FC89540C4C714FD2A2C368E31480C974" type="4" never_null="true" id="1"/>
+		<field name="UserIcon" uuid="246F6FC8D72E4BADA778E5C3A1329BFE" type="12" never_null="true" id="2"/>
+		<field name="VisibleInDialog" uuid="69E9CCDF106F472BAB8F6E3D8C36081B" type="1" never_null="true" id="3"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="3">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="214" top="18" width="132" height="104.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<base_extra data_file_path=":4D Passwords.4DD" package_name="4D Passwords" structure_file_name="4D Passwords">
+		<temp_folder folder_selector="data"/>
+	</base_extra>
+</base>

@@ -1,0 +1,141 @@
+{
+	"destination": "listScreen",
+	"width": 525,
+	"height": 100,
+	"markerBody": 40,
+	"markerBreak": 40,
+	"markerFooter": 40,
+	"events": [
+		"onDisplayDetail",
+		"onDoubleClick",
+		"onCloseBox",
+		"onSelectionChange",
+		"onLoadRecord"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Image5": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 524,
+					"height": 40,
+					"visibility": "selectedRows",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Pictures/Select.png"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 13,
+					"left": 154,
+					"width": 36,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "[UserInformation:2]UserID:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 12,
+					"left": 13,
+					"width": 126,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "<>UserName",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"S1_Field1": {
+					"type": "checkbox",
+					"top": 12,
+					"left": 317,
+					"width": 37,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "[UserInformation:2]VisibleInDialog:3",
+					"text": " ",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 13,
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterKeystroke"
+					]
+				},
+				"S1_Field2": {
+					"type": "input",
+					"top": 4,
+					"left": 456,
+					"width": 32,
+					"height": 32,
+					"sizingX": "move",
+					"dataSource": "[UserInformation:2]UserIcon:2",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"pictureFormat": "proportionalCenter"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "Layer 1",
+		"defaultView": "Layer 1",
+		"views": {
+			"Layer 1": {},
+			"Layer 2": {},
+			"Layer 3": {},
+			"Layer 4": {},
+			"Layer 5": {},
+			"Layer 6": {},
+			"Layer 7": {},
+			"Layer 8": {},
+			"Layer 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

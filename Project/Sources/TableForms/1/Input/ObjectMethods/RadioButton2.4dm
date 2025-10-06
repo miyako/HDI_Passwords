@@ -1,0 +1,1 @@
+[PREFERENCES:1]LoginDialogType:1:=1

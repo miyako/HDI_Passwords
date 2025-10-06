@@ -1,0 +1,354 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 600,
+	"height": 400,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"TabList": {
+					"type": "tab",
+					"top": 20,
+					"left": 30,
+					"width": 540,
+					"height": 350,
+					"dataSource": "<>TabList",
+					"dataSourceTypeHint": "arrayText",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"action": "gotoPage",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 4,
+					"left": 300,
+					"height": 472,
+					"visibility": "hidden",
+					"strokeDashArray": "2 2"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "groupBox",
+					"top": 99,
+					"left": 125,
+					"width": 353,
+					"height": 110,
+					"class": "Default",
+					"text": ":xliff:lib_passwordDialog"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 60,
+					"left": 50,
+					"width": 52,
+					"height": 52,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 280,
+					"left": 241,
+					"width": 120,
+					"height": 24,
+					"dataSource": "Bouton1",
+					"text": ":xliff:btn_test",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"method": "ObjectMethods/Bouton1.4dm"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 374,
+					"left": 30,
+					"width": 540,
+					"height": 15,
+					"dataSource": "<>LoginInfo",
+					"class": "Small_Buttons",
+					"fontStyle": "italic",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RadioButton1": {
+					"type": "radio",
+					"top": 137,
+					"left": 180,
+					"width": 262,
+					"height": 22,
+					"dataSource": "<>br1",
+					"text": ":xliff:lib_standardDialog",
+					"class": "Default",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/RadioButton1.4dm",
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"RadioButton2": {
+					"type": "radio",
+					"top": 166,
+					"left": 180,
+					"width": 262,
+					"height": 22,
+					"dataSource": "<>br2",
+					"text": ":xliff:lib_customDialog",
+					"class": "Default",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/RadioButton2.4dm",
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				}
+			}
+		},
+		{
+			"objects": {
+				"Subform1": {
+					"type": "subform",
+					"top": 78,
+					"left": 30,
+					"width": 516,
+					"height": 240,
+					"dataSourceTypeHint": "text",
+					"table": 2,
+					"listForm": "Output",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "single",
+					"printFrame": "variable"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 335,
+					"left": 254,
+					"width": 90,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "<>bUpdateUsers",
+					"text": ":xliff:btn_update",
+					"class": "Small_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 335,
+					"left": 362,
+					"width": 90,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "<>bUpdateUsers",
+					"text": ":xliff:btn_delete2",
+					"class": "Small_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 335,
+					"left": 470,
+					"width": 90,
+					"height": 19,
+					"sizingX": "move",
+					"dataSource": "<>bUpdateUsers",
+					"text": ":xliff:btn_new",
+					"class": "Small_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bBackup": {
+					"type": "button",
+					"top": 336,
+					"left": 40,
+					"width": 90,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "<>bBackup",
+					"text": ":xliff:btn_backup",
+					"class": "Small_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bBackup.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bRestore": {
+					"type": "button",
+					"top": 335,
+					"left": 147,
+					"width": 90,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "<>bRestore",
+					"text": ":xliff:btn_restore",
+					"class": "Small_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bRestore.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BackupInfo": {
+					"type": "text",
+					"top": 374,
+					"left": 30,
+					"width": 513,
+					"height": 13,
+					"class": "Small_Buttons",
+					"fontStyle": "italic",
+					"text": ":xliff:lib_note"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 52,
+					"left": 184,
+					"width": 56,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:lib_no"
+				},
+				"S1_Text2": {
+					"type": "text",
+					"top": 52,
+					"left": 45,
+					"width": 126,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Helvetica Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:lib_name"
+				},
+				"S1_Text1": {
+					"type": "text",
+					"top": 52,
+					"left": 245,
+					"width": 206,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:lib_visible"
+				},
+				"S1_Text3": {
+					"type": "text",
+					"top": 52,
+					"left": 485,
+					"width": 55,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:lib_icon"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 74,
+					"left": 35,
+					"width": 525
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 321,
+					"left": 35,
+					"width": 525
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"RadioButton1",
+				"RadioButton2"
+			]
+		},
+		"activeView": "Layer 1",
+		"defaultView": "Layer 1",
+		"views": {
+			"Layer 1": {},
+			"Layer 2": {},
+			"Layer 3": {},
+			"Layer 4": {},
+			"Layer 5": {},
+			"Layer 6": {},
+			"Layer 7": {},
+			"Layer 8": {},
+			"Layer 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 3
+}
